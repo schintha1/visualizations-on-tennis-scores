@@ -19,7 +19,6 @@ soup = BeautifulSoup(page,'html.parser')
 id = soup.find("div", {"id": "ff_p"})
 table_list = id.findAll('table', {'class': 'table_stats_match'})
 
-#Change format of the points
 
 for j in range(len(table_list)):
     setNumber = j+1
